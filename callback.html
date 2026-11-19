@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Vice Clips Login</title><link rel="stylesheet" href="style.css"></head><body><main>
+<h1>Vice Clips</h1><p id="msg">Connecting…</p><pre id="code" hidden style="white-space:pre-wrap;word-break:break-all"></pre>
+<script>
+const q=new URLSearchParams(location.search),c=q.get("code"),e=q.get("error");
+const m=document.getElementById("msg"),b=document.getElementById("code");
+if(c){m.textContent="Access granted ✅ Leave this page open and tell Claude.";b.textContent=c;b.hidden=false;}
+else{m.textContent="Not authorized: "+(e||"no code")+" "+(q.get("error_description")||"");}
+</script></main></body></html>
