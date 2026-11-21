@@ -1,16 +1,212 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Vice Clips</title><link rel="stylesheet" href="style.css"></head><body><main>
-<h1>Vice Clips</h1>
-<p>Vice Clips posts short highlight clips from GTA 6 live streams as YouTube Shorts and TikTok videos, in Turkish, English and German.</p>
-<h2>Channels</h2>
-<ul>
-<li><a href="https://www.youtube.com/@viceclips_tr">Vice Clips TR</a></li>
-<li><a href="https://www.youtube.com/@en_viceclips">Vice Clips EN</a></li>
-<li><a href="https://www.tiktok.com/@viceclips_tr">TikTok @viceclips_tr</a></li>
-<li><a href="https://www.tiktok.com/@en_viceclips">TikTok @en_viceclips</a></li>
-</ul>
-<h2>Vice Clips Uploader</h2>
-<p>Vice Clips Uploader is the channel owner's private tool. It uploads and schedules approved clips to the owner's own Vice Clips channels and reads those channels' statistics. Only the channel owner uses it; it does not offer any service to other users and does not access anyone else's account.</p>
-<p>Every clip credits the original streamer and links to their channel.</p>
-<footer><a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of service</a> · Contact: yt.bsnss1@gmail.com</footer>
-</main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vice Clips</title>
+<meta name="description" content="Vice Clips turns long gaming live streams into short, captioned vertical clips for YouTube Shorts, TikTok and Instagram Reels, in English, German and Turkish. In development; paid beta coming soon.">
+<meta name="theme-color" content="#0c0f14">
+<meta property="og:title" content="Vice Clips · Stream highlights, clipped and scheduled">
+<meta property="og:description" content="Finds the best moments in live streams, renders captioned vertical clips and schedules them to Shorts, TikTok and Reels. Paid beta coming soon.">
+<meta property="og:image" content="https://onullusoy.github.io/viceclips/assets/screenshots/home.webp">
+<meta property="og:url" content="https://onullusoy.github.io/viceclips/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+  <symbol id="gh" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></symbol>
+</svg>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/icon.svg" alt="">Vice Clips</a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#how">How it works</a>
+      <a href="#panel">The panel</a>
+      <a href="#channels">Channels</a>
+      <a href="#beta">Beta</a>
+    </nav>
+    <a class="btn btn-sm" href="https://github.com/onullusoy/viceclips"><svg><use href="#star"/></svg>Star</a>
+  </div>
+</header>
+
+<main class="home">
+  <section class="hero">
+    <div class="wrap">
+      <span class="pill"><span class="dot"></span>In development · Paid beta coming soon</span>
+      <h1 class="title">Stream highlights, <span class="grad">clipped while you sleep.</span></h1>
+      <p class="lead">Vice Clips watches long gaming live streams, finds the moments chat goes wild about, and turns them into captioned vertical clips for YouTube Shorts, TikTok and Instagram Reels, in English, German and Turkish.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://github.com/onullusoy/viceclips"><svg><use href="#star"/></svg>Star on GitHub to follow along</a>
+        <a class="btn" href="#panel">Tour the panel</a>
+      </div>
+      <div class="showcase">
+        <div class="frame">
+          <div class="bar"><i></i><i></i><i></i></div>
+          <img src="assets/screenshots/home.webp" width="1440" height="900" alt="Vice Clips panel home screen: clips waiting for approval per language, last 24 hours, audience across platforms, approvals over the last seven days and upcoming scheduled posts">
+        </div>
+        <div class="phone"><img src="assets/screenshots/flow.webp" width="430" height="900" alt="Approval flow on a phone: a vertical clip with subtitles and Approve, Skip and Reject buttons"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap center">
+      <span class="kicker">How it works</span>
+      <h2 class="h">From a six-hour stream to a 60-second Short</h2>
+      <p class="sub">The pipeline runs around the clock on a single machine. You only make the final call.</p>
+    </div>
+    <div class="wrap steps">
+      <div class="card"><span class="num">1</span><h3>Watch</h3><p>Follows the streamers you choose on Twitch, Kick and YouTube and picks up their finished streams.</p></div>
+      <div class="card"><span class="num">2</span><h3>Score</h3><p>Reads chat activity, audio peaks and the transcript to rank every moment. Only the strongest few per hour make it through.</p></div>
+      <div class="card"><span class="num">3</span><h3>Render</h3><p>Cuts a 9:16 clip with facecam on top, burned-in subtitles, a short hook and a caption written for each language.</p></div>
+      <div class="card"><span class="num">4</span><h3>Approve &amp; post</h3><p>Swipe through drafts, approve the good ones, and they are scheduled to Shorts, TikTok and Reels on a daily plan.</p></div>
+    </div>
+  </section>
+
+  <section id="panel">
+    <div class="wrap">
+      <div class="center">
+        <span class="kicker">The panel</span>
+        <h2 class="h">One dashboard for every clip, channel and language</h2>
+        <p class="sub">The web panel is where the work happens. It runs on your own machine, works on desktop and phone, and can be installed as an app.</p>
+      </div>
+
+      <div class="feature">
+        <div class="frame"><div class="bar"><i></i><i></i><i></i></div><img src="assets/screenshots/home.webp" width="1440" height="900" loading="lazy" alt="Panel home screen with approval queue, audience numbers and upcoming posts"></div>
+        <div>
+          <span class="kicker">Home</span>
+          <h3>Everything that needs you, on one screen</h3>
+          <p>Open the panel and see what is waiting, what is going out next and how the channels are doing.</p>
+          <ul class="ticks">
+            <li>Approval queue per language, one tap to start reviewing</li>
+            <li>Followers and views across YouTube, Instagram and TikTok</li>
+            <li>Upcoming posts with time, platform and caption</li>
+            <li>Which followed streamers are live right now</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="feature flip">
+        <div class="phone-solo"><img src="assets/screenshots/flow.webp" width="430" height="900" loading="lazy" alt="Approval flow: full-screen vertical clip with streamer credit, score and Approve, Skip, Reject, Edit, Text and Download buttons"></div>
+        <div>
+          <span class="kicker">Flow</span>
+          <h3>Review clips like a feed</h3>
+          <p>Drafts play full screen, sorted by score. Approve, skip or reject in a tap, and the next one is already loaded.</p>
+          <ul class="ticks">
+            <li>Switch between English, German and Turkish queues</li>
+            <li>Fix the caption or ask for a re-edit without leaving the clip</li>
+            <li>Rejections with a reason feed back into the filters</li>
+            <li>Approval also works from Telegram when you are away</li>
+          </ul>
+          <p class="note">Streamer's face blurred for this page. Every published clip credits the streamer.</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="frame"><div class="bar"><i></i><i></i><i></i></div><img src="assets/screenshots/stats.webp" width="1440" height="900" loading="lazy" alt="Statistics page: clips prepared, approved, rejected and published, approval rate by language and daily clips per language"></div>
+        <div>
+          <span class="kicker">Statistics</span>
+          <h3>Know what works</h3>
+          <p>Track the whole funnel from prepared to published, and see which streamers, languages and sources produce clips worth posting.</p>
+          <ul class="ticks">
+            <li>Prepared, approved, rejected and published over 7, 14 or 30 days</li>
+            <li>Approval rate by language and rejection reasons</li>
+            <li>Per-platform performance and daily reports</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note center">Screenshots from the current development build. The panel's interface is in Turkish today; English and German are planned for the beta.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap center">
+      <span class="kicker">Built-in guardrails</span>
+      <h2 class="h">Bad clips never reach your channel</h2>
+      <p class="sub">Every draft passes automatic checks before you see it, and nothing is posted without your approval.</p>
+    </div>
+    <div class="wrap guards">
+      <div class="card"><span class="ico" aria-hidden="true">🔇</span><div><h3>Muted or silent audio</h3><p>Clips with platform-muted stretches or missing speech are skipped.</p></div></div>
+      <div class="card"><span class="ico" aria-hidden="true">🎵</span><div><h3>Copyrighted music</h3><p>Long music passages, like in-game radio, are detected and dropped.</p></div></div>
+      <div class="card"><span class="ico" aria-hidden="true">🚫</span><div><h3>Unsafe content</h3><p>Moments that chat or the transcript flag as explicit are filtered out.</p></div></div>
+      <div class="card"><span class="ico" aria-hidden="true">🎮</span><div><h3>Right game only</h3><p>Only the game you follow is clipped, not the rest of the stream.</p></div></div>
+      <div class="card"><span class="ico" aria-hidden="true">🗓️</span><div><h3>Sensible schedule</h3><p>Posts are spaced out per platform and language, so channels never spam.</p></div></div>
+      <div class="card"><span class="ico" aria-hidden="true">🎥</span><div><h3>Credit, always</h3><p>Every clip names the streamer and links to their channel.</p></div></div>
+    </div>
+  </section>
+
+  <section id="channels">
+    <div class="wrap center">
+      <span class="kicker">See it live</span>
+      <h2 class="h">Our own channels run on it</h2>
+      <p class="sub">The Vice Clips channels are the testbed: everything they post was found, cut and scheduled by the tool.</p>
+    </div>
+    <div class="wrap channels">
+      <div class="card">
+        <div class="lang"><span class="tag en">EN</span>English</div>
+        <ul class="links">
+          <li><a href="https://www.youtube.com/@en_viceclips">YouTube <span>@en_viceclips</span></a></li>
+          <li><a href="https://www.tiktok.com/@en_viceclips">TikTok <span>@en_viceclips</span></a></li>
+          <li><a href="https://www.instagram.com/viceclips_en">Instagram <span>@viceclips_en</span></a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="lang"><span class="tag de">DE</span>German</div>
+        <ul class="links">
+          <li><a href="https://www.youtube.com/@ViceClips0de">YouTube <span>@ViceClips0de</span></a></li>
+          <li><a href="https://www.instagram.com/viceclips_de">Instagram <span>@viceclips_de</span></a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="lang"><span class="tag tr">TR</span>Turkish</div>
+        <ul class="links">
+          <li><a href="https://www.youtube.com/@viceclips_tr">YouTube <span>@viceclips_tr</span></a></li>
+          <li><a href="https://www.tiktok.com/@viceclips_tr">TikTok <span>@viceclips_tr</span></a></li>
+          <li><a href="https://www.instagram.com/viceclips_tr">Instagram <span>@viceclips_tr</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="beta">
+    <div class="wrap">
+      <div class="beta">
+        <span class="pill"><span class="dot"></span>Paid beta coming soon</span>
+        <h2 class="h">Want it for your own channels?</h2>
+        <p class="sub">Vice Clips is still in active development. A paid beta for clip channels and streamers is coming soon. Star the repository and choose <strong>Watch → Custom → Releases</strong> to hear about it first.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="https://github.com/onullusoy/viceclips"><svg><use href="#gh"/></svg>Star on GitHub</a>
+          <a class="btn" href="mailto:yt.bsnss1@gmail.com?subject=Vice%20Clips%20beta">Email us</a>
+        </div>
+      </div>
+
+      <div class="uploader">
+        <div class="card">
+          <h3>Vice Clips Uploader today</h3>
+          <p>Right now the uploader is the channel owner's private tool. It uploads and schedules approved clips to the owner's own Vice Clips channels and reads those channels' statistics. It does not offer any service to other users and does not access anyone else's account.</p>
+        </div>
+        <div class="card">
+          <h3>The beta</h3>
+          <p>The paid beta will be a separate offering with its own terms and privacy policy, published here before it opens. Until then, the <a href="privacy.html">privacy policy</a> and <a href="terms.html">terms</a> below cover the private tool only.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="disclaimer">Vice Clips is an independent project. It is not affiliated with or endorsed by Rockstar Games, Take-Two Interactive, VICE Media, or any streaming platform. All clips credit their original creators; rights holders can request removal at any time.</p>
+    <nav aria-label="Legal">
+      <a href="privacy.html">Privacy policy</a>
+      <a href="terms.html">Terms of service</a>
+      <a href="mailto:yt.bsnss1@gmail.com">yt.bsnss1@gmail.com</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
